@@ -7,6 +7,9 @@ router.get("/", (req, res, next) => {
     message: "Hi read all",
   });
 });
+
+// Reads one post
+
 router.get("/:id", (req, res, next) => {
   res.json({
     message: "Hi read one",
