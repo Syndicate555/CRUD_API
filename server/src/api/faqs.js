@@ -31,6 +31,8 @@ router.put("/:id", (req, res, next) => {
     message: "Hi update one",
   });
 });
+
+// Deletes one post
 router.delete("/:id", (req, res, next) => {
   res.json({
     message: "Hi delete one",
