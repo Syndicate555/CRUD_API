@@ -18,6 +18,6 @@ router.put("/:id", (req, res, next) => {
 });
 router.delete("/:id", (req, res, next) => {
   res.json({
-    message: "Hi read all",
+    message: "Hi delete one",
   });
 });
