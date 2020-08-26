@@ -14,4 +14,6 @@ router.get("/", (req, res) => {
 
 router.use("/emojis", emojis);
 
+// mounting the router
+router.use("/faqs", faqs);
 module.exports = router;
