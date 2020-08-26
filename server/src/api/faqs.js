@@ -23,6 +23,9 @@ router.post("/:id", (req, res, next) => {
     message: "Hi create one",
   });
 });
+
+// updates one post
+
 router.put("/:id", (req, res, next) => {
   res.json({
     message: "Hi update one",
