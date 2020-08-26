@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const monk = require("monk");
+
+const db = monk(process.env.MONGO_URI);
 // Reads all the posts
 router.get("/", (req, res, next) => {
   res.json({
