@@ -8,7 +8,7 @@ router.get("/", (req, res, next) => {
 });
 router.get("/:id", (req, res, next) => {
   res.json({
-    message: "Hi read all",
+    message: "Hi read one",
   });
 });
 router.post("/:id", (req, res, next) => {
