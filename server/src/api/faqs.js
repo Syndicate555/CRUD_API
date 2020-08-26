@@ -8,12 +8,12 @@ router.get("/", (req, res, next) => {
 });
 router.post("/:id", (req, res, next) => {
   res.json({
-    message: "Hi read all",
+    message: "Hi read one",
   });
 });
 router.put("/:id", (req, res, next) => {
   res.json({
-    message: "Hi read all",
+    message: "Hi update one",
   });
 });
 router.delete("/:id", (req, res, next) => {
