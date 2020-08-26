@@ -15,6 +15,9 @@ router.get("/:id", (req, res, next) => {
     message: "Hi read one",
   });
 });
+
+// creates one post
+
 router.post("/:id", (req, res, next) => {
   res.json({
     message: "Hi create one",
