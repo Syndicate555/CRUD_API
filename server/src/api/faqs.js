@@ -11,5 +11,9 @@ router.post("/:id", (req, res, next) => {
     message: "Hi read all",
   });
 });
-router.put("/:id", (req, res, next) => {});
+router.put("/:id", (req, res, next) => {
+  res.json({
+    message: "Hi read all",
+  });
+});
 router.delete("/:id", (req, res, next) => {});
