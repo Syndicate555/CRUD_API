@@ -13,7 +13,7 @@ router.get("/:id", (req, res, next) => {
 });
 router.post("/:id", (req, res, next) => {
   res.json({
-    message: "Hi read one",
+    message: "Hi create one",
   });
 });
 router.put("/:id", (req, res, next) => {
