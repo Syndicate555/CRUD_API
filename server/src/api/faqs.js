@@ -1,11 +1,19 @@
 const express = require("express");
 const router = express.Router();
 
-// Read
-router.get("/", (req, res, next) => {});
+// Read All
+router.get("/", (req, res, next) => {
+  res.json({
+    message: "Hello ",
+  });
+});
 
 // Create
-router.post("/", (req, res, next) => {});
+router.post("/:id", (req, res, next) => {
+  res.json({
+    message: "Hello ",
+  });
+});
 
 // Update
 router.put("/", (req, res, next) => {});
