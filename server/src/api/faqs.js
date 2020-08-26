@@ -12,10 +12,13 @@ router.get("/", (req, res, next) => {
 
 // Reads one post
 
-router.get("/:id", (req, res, next) => {
-  res.json({
-    message: "Hi read one",
-  });
+router.get("/:id", async (req, res) => {
+  try {
+    const items = await faqs.find({});
+    res.json(items);
+  } catch (err) {
+    console.error(err);
+  }
 });
 
 // creates one post
