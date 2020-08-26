@@ -6,6 +6,11 @@ router.get("/", (req, res, next) => {
     message: "Hi read all",
   });
 });
+router.get("/:id", (req, res, next) => {
+  res.json({
+    message: "Hi read all",
+  });
+});
 router.post("/:id", (req, res, next) => {
   res.json({
     message: "Hi read one",
