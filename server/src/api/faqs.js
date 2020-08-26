@@ -23,4 +23,8 @@ router.put("/", (req, res, next) => {
 });
 
 //Delete
-router.delete("/", (req, res, next) => {});
+router.delete("/", (req, res, next) => {
+  res.json({
+    message: "Hello delete one ",
+  });
+});
