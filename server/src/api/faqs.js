@@ -1,24 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const monk = require("monk");
-const config = require("config");
-const db = config.get("mongoURI");
-const mongoose = require("mongoose");
-const connectDB = () => {
-  mongoose
-    .connect(db, {
-      useNewURLParser: true,
-      useCreateIndex: true,
-      useFindAndModify: false,
-    })
-    .then(() => console.log("mongoDB connected"))
-    .catch((err) => {
-      console.error(err.message);
-      process.exit(1);
-    });
-};
 
-const faqs = db.get("faqs");
 // Reads all the posts
 router.get("/", (req, res, next) => {
   res.json({
