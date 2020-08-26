@@ -18,7 +18,7 @@ router.post("/:id", (req, res, next) => {
 // Update
 router.put("/", (req, res, next) => {
   res.json({
-    message: "Hello ",
+    message: "Hello update one ",
   });
 });
 
