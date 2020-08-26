@@ -16,7 +16,11 @@ router.post("/:id", (req, res, next) => {
 });
 
 // Update
-router.put("/", (req, res, next) => {});
+router.put("/", (req, res, next) => {
+  res.json({
+    message: "Hello ",
+  });
+});
 
 //Delete
 router.delete("/", (req, res, next) => {});
