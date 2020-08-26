@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const monk = require("monk");
-
+const config = require("config");
 const db = monk(process.env.MONGO_URI);
 const faqs = db.get("faqs");
 // Reads all the posts
