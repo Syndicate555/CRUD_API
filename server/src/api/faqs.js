@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
+// Reads all the posts
 router.get("/", (req, res, next) => {
   res.json({
     message: "Hi read all",
@@ -26,3 +27,5 @@ router.delete("/:id", (req, res, next) => {
     message: "Hi delete one",
   });
 });
+
+module.exports = router;
