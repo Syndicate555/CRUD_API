@@ -2,7 +2,16 @@ const express = require("express");
 const router = express.Router();
 const monk = require("monk");
 const config = require("config");
+const c = require("config");
 const db = config.get("mongoURI");
+const connectDB = () => {
+  mongoose.connect(db, {
+    useNewURLParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+  });
+};
+
 const faqs = db.get("faqs");
 // Reads all the posts
 router.get("/", (req, res, next) => {
